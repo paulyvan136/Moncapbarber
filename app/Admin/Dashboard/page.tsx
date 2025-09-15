@@ -87,9 +87,9 @@ export default function DashboardHome() {
     try {
       setLoading(true);
       const [salonsRes, employesRes, servicesRes, rendezVousRes] = await Promise.all([
-        fetch("/api/salon"),
-        fetch("/api/employe"),
-        fetch("/api/service"),
+        fetch("/api/salons"),
+        fetch("/api/employes"),
+        fetch("/api/services"),
         fetch("/api/rendezvous"),
       ]);
 
