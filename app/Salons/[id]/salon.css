@@ -1,0 +1,7 @@
+.hero {
+    background: url('/images/hero-home2.jpg') no-repeat center;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    color: white;
+  }

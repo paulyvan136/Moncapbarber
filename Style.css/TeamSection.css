@@ -1,0 +1,47 @@
+/* Style général de la carte */
+.team-section{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+@media(max-width: 768px) {
+  .team-section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.Member-card {
+    position: relative; /* positionné pour permettre l'overlay */
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    border-radius: 0;
+
+  }
+  .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Overlay masqué par défaut */
+  .overlay {
+    position: absolute; /* positionné par rapport à la carte */
+    inset: 0; /* top: 0; left: 0; bottom: 0; right: 0 */
+    opacity: 0; /* masqué par défaut */
+    transition: opacity 0.3s ease; /* transition de l'overlay */
+    text-align: center;
+  }
+   
+  /* Effets au survol */
+  .Member-card:hover .card-img {
+    transform: scale(1.05); /* zoom */
+  }
+  
+  .Member-card:hover .overlay {
+    opacity: 1; /* rend l'overlay visible */
+  }
+  
+

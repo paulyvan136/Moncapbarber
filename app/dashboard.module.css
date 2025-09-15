@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply transition-shadow duration-200;
+}
+
+.card:hover {
+  @apply shadow-md;
+}

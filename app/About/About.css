@@ -1,0 +1,25 @@
+.aboutPage{
+    padding-left: 7rem;
+    padding-right: 2rem;
+    padding-top: 10rem;
+}
+.img-about {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .aboutPage {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 5rem;
+    }
+    .img-about {
+        width: 100%;
+        height: auto;
+    }
+    .section-img-about{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 5rem;
+    }
+}

@@ -1,0 +1,77 @@
+
+.b{
+  color: #FCA95D
+
+}
+
+
+.hero {
+  background: url('/images/hero-home2.jpg') no-repeat center;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  color: white;
+}
+.about {
+  padding-left: 7rem;
+  padding-right: 1rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .img-about {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.gallery{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+  
+}
+
+.img-gallery {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .gallery {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.prix {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+@media (max-width: 768px) {
+  .prix {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+}
+
+
+
+                      
+

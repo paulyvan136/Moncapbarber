@@ -1,0 +1,46 @@
+ /* Style de la carte salon */
+ .salon-section{
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  
+  @media(max-width: 768px) {
+  .salon-section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  }
+  
+  .salon-card {
+    position: relative; /* positionné pour permettre l'overlay */
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    border-radius: 0;
+  
+  }
+  .img-salon {
+    width: 50rem; /* prend toute la largeur de la carte */
+    height: 15rem; /* hauteur de la carte */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Overlay masqué par défaut */
+  .overlay {
+    position: absolute; /* positionné par rapport à la carte */
+    inset: 0; /* top: 0; left: 0; bottom: 0; right: 0 */
+    opacity: 0; /* masqué par défaut */
+    transition: opacity 0.3s ease; /* transition de l'overlay */
+    text-align: center;
+  }
+   
+  /* Effets au survol */
+  .salon-card:hover .card-img {
+    transform: scale(1.05); /* zoom */
+  }
+  
+  .salon-card:hover .overlay {
+    opacity: 1; /* rend l'overlay visible */
+  }
+  

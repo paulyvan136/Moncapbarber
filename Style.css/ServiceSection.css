@@ -1,0 +1,47 @@
+.list-group{
+  list-style: none;
+}
+
+.list-group-item {
+    position: relative; /* Important pour bien positionner ::before */
+    cursor: pointer;
+    border: none;
+    color: #8c8c8c;
+    padding: 15px 0;
+    font-size: 20px;
+    background-color: transparent !important; /* Barre bleue visible sur l'actif */
+    transition: font-weight 0.3s ease, color 0.3s ease;
+  }
+  
+  .list-group-item.active {
+    font-weight: bold;
+    background-color: transparent !important; /* Barre bleue visible sur l'actif */
+
+  }
+  
+  .list-group-item::before {
+    content: '';
+    position: absolute;
+    left: -5px; /* Barre légèrement en dehors du texte */
+    top: 0;
+    width: 4px; /* Épaisseur de la barre */
+    height: 100%; /* Prend toute la hauteur de l'élément */
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+
+  .services {
+    margin-left: 7rem;
+    margin-right: 5rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+  @media (max-width: 768px) {
+    .services {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+  }
